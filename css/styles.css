@@ -520,7 +520,7 @@ progress {
 }
 @media (min-width: 1200px) {
   .display-1 {
-    font-size: 3.9rem;
+    font-size: 3rem;
   }
 }
 
@@ -3110,6 +3110,39 @@ textarea.form-control-lg {
   background-color: var(--bs-secondary);
   border-color: var(--bs-secondary);
 }
+
+.btn-yellow {
+  color: var(--bs-primary);
+  background-color: var(--bs-yellow);
+  border-color: var(--bs-yellow);
+  font-weight: bold;
+  font-size: larger;
+}
+.btn-yellow:hover {
+  color: var(--bs-tertiary);
+  background-color: var(--bs-yellow);
+  border-color: var(--bs-yellow);
+}
+.btn-check:focus + .btn-yellow, .btn-yellow:focus {
+  color:  var(--bs-tertiary);
+  background-color: var(--bs-yellow);
+  border-color: var(--bs-yellow);
+  box-shadow: 0 0 0 0.25rem var(--bs-yellow);
+}
+.btn-check:checked + .btn-yellow, .btn-check:active + .btn-yellow, .btn-yellow:active, .btn-yellow.active, .show > .btn-yellow.dropdown-toggle {
+  color:  var(--bs-tertiary);
+  background-color: var(--bs-yellow);
+  border-color: var(--bs-yellow);
+}
+.btn-check:checked + .btn-yellow:focus, .btn-check:active + .btn-yellow:focus, .btn-yellow:active:focus, .btn-yellow.active:focus, .show > .btn-yellow.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.25rem var(--bs-yellow);
+}
+.btn-yellow:disabled, .btn-yellow.disabled {
+  color: var(--bs-tertiary);
+  background-color: var(--bs-yellow);
+  border-color: var(--bs-yellow);
+}
+
 
 .btn-success {
   color: #fff;
