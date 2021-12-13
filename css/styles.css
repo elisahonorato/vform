@@ -11611,7 +11611,7 @@ section.cta:before {
   }
 }
 footer a {
-  color: rgba(255, 255, 255);
+  color: rgba(255, 255, 255, 1);
   text-decoration: none;
 }
 footer a:hover, footer a:active, footer a:focus {
