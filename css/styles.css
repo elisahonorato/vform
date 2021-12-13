@@ -11614,8 +11614,9 @@ footer a {
   color: rgba(255, 255, 255, 1);
   text-decoration: none;
 }
+
 footer a:hover, footer a:active, footer a:focus {
-  color: rgba(255, 255, 255, 0.75);
+  color: #6633ff;
   text-decoration: underline;
 }
 
