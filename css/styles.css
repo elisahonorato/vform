@@ -11704,3 +11704,14 @@ footer a:hover, footer a:active, footer a:focus {
     max-width: 17rem;
   }
 }
+
+footer .social a,
+footer .social a:hover,
+footer .social a:active,
+footer .social a:focus {
+  text-decoration: none;
+}
+
+footer .social i {
+  color: #24145C;
+}
