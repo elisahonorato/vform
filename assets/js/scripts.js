@@ -1,13 +1,3 @@
- // SCROLL
-var secundario = document.getElementById("secundario").offsetHeight;
-window.addEventListener("scroll", (event) => {
-    let scroll = this.scrollY;
-    if (scroll > secundario + 10) {
-        document.getElementById("principal").classList.add("fixed-top");
-    } else {
-        document.getElementById("principal").classList.remove("fixed-top");
-    }
-});
 
 (function ($) {
   $(document).ready(function () {
