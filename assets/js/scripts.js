@@ -4,8 +4,6 @@
     "use strict";
 
 
-
-
     // PAGE TRANSITION
     $('body a').on('click', function (e) {
 
