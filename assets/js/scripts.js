@@ -4,6 +4,8 @@
     "use strict";
 
 
+
+
     // PAGE TRANSITION
     $('body a').on('click', function (e) {
 
@@ -140,11 +142,11 @@
 
   // PRELOADER
   let settings = {
-    progressSize: 320,
-    progressColor: '#ffffff',
+    progressSize: 20,
+    progressColor: 'rgba(255, 255, 255)',
     lineWidth: 2,
     lineCap: 'round',
-    preloaderAnimationDuration: 800,
+    preloaderAnimationDuration: 700,
     startDegree: -90,
     finalDegree: 270
   }
