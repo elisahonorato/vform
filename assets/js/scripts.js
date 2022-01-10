@@ -4,26 +4,6 @@
     "use strict";
 
 
-    // ACCORDION
-    var allPanels = $('.accordion > dd').hide();
-    $('.accordion > dt > a').click(function () {
-      $(this).parent().next().slideToggle();
-      return false;
-    });
-
-
-    /* HAMBURGER */
-    $('.hamburger').on('click', function () {
-      $(".hamburger").toggleClass("active")
-      $(".side-widget").toggleClass("active")
-      $(".section-wrapper").toggleClass("no-transform")
-    })
-
-    /* SEARCH */
-    $('.search-button').on('click', function () {
-      $(".search-box").toggleClass("active")
-      $(".section-wrapper").toggleClass("no-transform")
-    })
 
 
     // PAGE TRANSITION
