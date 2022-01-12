@@ -1164,6 +1164,7 @@ progress {
 @media (max-width: 576px) {
   .col-sm {
     width: 33.333%;
+    flex: 0 0 auto;
   }
 }
 
