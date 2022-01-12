@@ -144,7 +144,7 @@
   let settings = {
     progressSize: 20,
     progressColor: 'rgba(255, 255, 255)',
-    lineWidth: 2,
+    lineWidth: 3,
     lineCap: 'round',
     preloaderAnimationDuration: 700,
     startDegree: -90,
@@ -363,3 +363,4 @@ window.addEventListener('DOMContentLoaded', event => {
     });
 
 });
+

@@ -7,23 +7,36 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
   <meta name="author" content="" />
   <title>vform</title>
-  <link rel="icon" type="image/x-icon" href="https://vform-pages.s3.us-east-2.amazonaws.com/landing/images/vinko_favicon.png" />
+  <link rel="icon" type="image/x-icon"
+    href="https://vform-pages.s3.us-east-2.amazonaws.com/landing/images/vinko_favicon.png" />
   <!-- Core theme CSS (includes Bootstrap)-->
   <link href="assets/css/styles.css" rel="stylesheet" />
-  <script src="assets/js/script.js"></script>
+  <link href="assets/scss/style.scss" />
+  <link rel="stylesheet" type="text/css"
+    href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css" />
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> -->
+  <script src="assets/js/swiper.min.js"></script>
+  <script src="assets/js/scripts.js"></script>
+  <!-- Latest compiled and minified CSS -->
+  <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"> -->
+
+  <!-- Latest compiled JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
     integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous" />
-
 </head>
 
 <body id="page-top">
   <!-- Navigation-->
   <nav class="navbar navbar-expand-lg navbar-light fixed-top shadow p-3 mb-5 bg-white rounded" id="mainNav">
     <div class="container px-0">
-      <a href="#hello"> <img src="https://vform-pages.s3.us-east-2.amazonaws.com/landing/images/vform1.png" alt="logo"
-          width="auto" height="38"> </a>
+      <a href="#hello">
+        <img src="https://vform-pages.s3.us-east-2.amazonaws.com/landing/images/vform1.png" alt="logo" width="auto"
+          height="38" />
+      </a>
       <div class="ms-auto mb-md-0">
         <a class="btn btn-primary rounded-pill px-3 mb-lg-0" href="https://vinkodigital.com/vform/agendatudemo/"
           target="_blank">
@@ -37,22 +50,28 @@
   </nav>
   <div class="preloader" id="preloader">
     <svg viewBox="0 0 1920 1080" preserveAspectRatio="none" version="1.1">
-       <path d="M0,0 C305.333333,0 625.333333,0 960,0 C1294.66667,0 1614.66667,0 1920,0 L1920,1080 C1614.66667,1080 1294.66667,1080 960,1080 C625.333333,1080 305.333333,1080 0,1080 L0,0 Z"></path>
+      <path
+        d="M0,0 C305.333333,0 625.333333,0 960,0 C1294.66667,0 1614.66667,0 1920,0 L1920,1080 C1614.66667,1080 1294.66667,1080 960,1080 C625.333333,1080 305.333333,1080 0,1080 L0,0 Z">
+      </path>
     </svg>
     <div class="inner">
-       <canvas class="progress-bar" id="progress-bar" width="200" height="200"></canvas>
-       <figure><img src="https://vform-pages.s3.us-east-2.amazonaws.com/landing/images/vinko_favicon.png"  alt="Image"></figure>
-       <small>Cargando</small> 
+      <canvas class="progress-bar" id="progress-bar" width="200" height="200"></canvas>
+      <figure>
+        <img src="https://vform-pages.s3.us-east-2.amazonaws.com/landing/images/vinko_favicon.png" alt="Image" />
+      </figure>
+      <small>Cargando</small>
     </div>
     <!-- end inner -->
- </div>
- <!-- end preloder -->
- <div class="page-transition">
+  </div>
+  <!-- end preloder -->
+  <div class="page-transition">
     <svg viewBox="0 0 1920 1080" preserveAspectRatio="none" version="1.1">
-       <path d="M0,0 C305.333333,0 625.333333,0 960,0 C1294.66667,0 1614.66667,0 1920,0 L1920,1080 C1614.66667,980 1294.66667,930 960,930 C625.333333,930 305.333333,980 0,1080 L0,0 Z"></path>
+      <path
+        d="M0,0 C305.333333,0 625.333333,0 960,0 C1294.66667,0 1614.66667,0 1920,0 L1920,1080 C1614.66667,980 1294.66667,930 960,930 C625.333333,930 305.333333,980 0,1080 L0,0 Z">
+      </path>
     </svg>
- </div>
- <!-- end page-transition -->
+  </div>
+  <!-- end page-transition -->
   <!-- Grilla -->
   <header class="masthead">
     <div class="container px-5">
@@ -60,25 +79,27 @@
         <div class="col-lg-12">
           <!-- Texto grande 1-->
           <div class="mb-5 mb-lg-0 text-center text-lg-start">
-            <h1 class="display-1 lh-1 mb-5">Ahorra tiempo en la gestión y optimiza tus fondos, becas,
-              postulaciones y convocatorias</h1>
+            <h1 class="lh-1 mb-5">
+              Ahorra tiempo en la gestión y optimiza tus fondos, becas,
+              postulaciones y convocatorias
+            </h1>
           </div>
         </div>
         <!--Botones-->
         <div class="col-lg-12 mt-5">
-          <input id="button" class="btn btn-primary rounded-pill px-3 mb-3" type="button" value="Fondos concursables">
-          <input id="button" class="btn btn-primary rounded-pill px-3 mb-3" type="button" value="Becas">
-          <input id="button" class="btn btn-primary rounded-pill px-3 mb-3" type="button" value="Licitaciones">
-          <input id="button" class="btn btn-primary rounded-pill px-3 mb-3" type="button" value="Admisiones">
-          <input id="button" class="btn btn-primary rounded-pill px-3 mb-3" type="button" value="Premios">
-          <input id="button" class="btn btn-primary rounded-pill px-3 mb-3" type="button" value="Fondos municipales">
-          <input id="button" class="btn btn-primary rounded-pill px-3 mb-3" type="button" value="Proyectos">
-          <input id="button" class="btn btn-primary rounded-pill px-3 mb-3" type="button" value="Solicitudes">
-          <input id="button" class="btn btn-primary rounded-pill px-3 mb-3" type="button" value="Antecedentes">
-          <input id="button" class="btn btn-primary rounded-pill px-3 mb-3" type="button" value="Empleos">
-          <input id="button" class="btn btn-primary rounded-pill px-3 mb-3" type="button" value="Subsidios">
-          <input id="button" class="btn btn-primary rounded-pill px-3 mb-3" type="button" value="Inscripciones">
-          <input id="button" class="btn btn-primary rounded-pill px-3 mb-3" type="button" value="Voluntariados">
+          <input id="button" class="btn btn-primary rounded-pill px-3 mb-3" type="button" value="Fondos concursables" />
+          <input id="button" class="btn btn-primary rounded-pill px-3 mb-3" type="button" value="Becas" />
+          <input id="button" class="btn btn-primary rounded-pill px-3 mb-3" type="button" value="Licitaciones" />
+          <input id="button" class="btn btn-primary rounded-pill px-3 mb-3" type="button" value="Admisiones" />
+          <input id="button" class="btn btn-primary rounded-pill px-3 mb-3" type="button" value="Premios" />
+          <input id="button" class="btn btn-primary rounded-pill px-3 mb-3" type="button" value="Fondos municipales" />
+          <input id="button" class="btn btn-primary rounded-pill px-3 mb-3" type="button" value="Proyectos" />
+          <input id="button" class="btn btn-primary rounded-pill px-3 mb-3" type="button" value="Solicitudes" />
+          <input id="button" class="btn btn-primary rounded-pill px-3 mb-3" type="button" value="Antecedentes" />
+          <input id="button" class="btn btn-primary rounded-pill px-3 mb-3" type="button" value="Empleos" />
+          <input id="button" class="btn btn-primary rounded-pill px-3 mb-3" type="button" value="Subsidios" />
+          <input id="button" class="btn btn-primary rounded-pill px-3 mb-3" type="button" value="Inscripciones" />
+          <input id="button" class="btn btn-primary rounded-pill px-3 mb-3" type="button" value="Voluntariados" />
         </div>
 
         <div class="col-md-12 text-center mt-5">
@@ -88,36 +109,37 @@
           </a>
         </div>
       </div>
-
     </div>
   </header>
   <!--Qué es V-form-->
   <div class="container mt-5">
     <div class="row">
-      <div class="col-lg-2 col-sm-4">
-        <button type="button" class="btn btn-secondary rounded-pill px-3 mb-0 mt-0">Qué es vform</button>
+      <div class="padding-right-150 col-lg-2 col-sm-4 d-inline-flex flex-row-reverse" id="button">
+        <button type="button" class="btn btn-secondary rounded-pill h-30 px-3 mb-0 mt-0">
+          Qué es vform
+        </button>
       </div>
       <div class="col-lg-8 col-sm-4 mb-5">
         <div class="float-left">
-          <h4>Plataforma de gestión de convocatorias
-            y postulación en línea, se habilita en 1 sólo día.</h4>
+          <h4>
+            Plataforma de gestión de convocatorias y postulación en línea, se
+            habilita en 1 sólo día.
+          </h4>
         </div>
       </div>
     </div>
   </div>
   <!--Cards-->
   <div class="container col-lg-10 px-md-5 px-sm-1">
-
     <div class="card-deck gx-5 p-lg-3">
       <div class="row row-cols-1 row-cols-md-2 g-5">
         <div class="col">
           <div class="card rounded-3 p-lg-4 shadow-lg p-4 mb-5 bg-white rounded border-0 h-100">
             <img src="https://vform-pages.s3.us-east-2.amazonaws.com/landing/images/iconos/iconos_Vinko-27.png"
-              class="card-img-top p-lg-5" alt="...">
+              class="card-img-top p-lg-5" alt="..." />
             <div class="card-body">
-              <p class="card-text text-center">Convocatorias
-                y <strong>formularios a
-                  tu medida</strong>
+              <p class="card-text text-center">
+                Convocatorias y <strong>formularios a tu medida</strong>
               </p>
             </div>
           </div>
@@ -125,11 +147,10 @@
         <div class="col">
           <div class="card rounded-3 p-lg-4 shadow-lg p-4 mb-5 bg-white rounded border-0 h-100">
             <img src="https://vform-pages.s3.us-east-2.amazonaws.com/landing/images/iconos/iconos_Vinko-28.png"
-              class="card-img-top p-lg-5" alt="...">
+              class="card-img-top p-lg-5" alt="..." />
             <div class="card-body">
-              <p class="card-text text-center"><strong>Reportes y
-                  estadísticas</strong> en
-                un sólo click
+              <p class="card-text text-center">
+                <strong>Reportes y estadísticas</strong> en un sólo click
               </p>
             </div>
           </div>
@@ -137,10 +158,10 @@
         <div class="col">
           <div class="card rounded-3 p-lg-4 shadow-lg p-4 mb-5 bg-white rounded border-0 h-100">
             <img src="https://vform-pages.s3.us-east-2.amazonaws.com/landing/images/iconos/iconos_Vinko-29.png"
-              class="card-img-top p-lg-5" alt="...">
+              class="card-img-top p-lg-5" alt="..." />
             <div class="card-body">
-              <p class="card-text text-center">Evaluación de candidatos <strong>fácil
-                  y en línea</strong>
+              <p class="card-text text-center">
+                Evaluación de candidatos <strong>fácil y en línea</strong>
               </p>
             </div>
           </div>
@@ -148,10 +169,12 @@
         <div class="col">
           <div class="card rounded-3 p-lg-4 shadow-lg p-4 mb-5 bg-white rounded border-0 h-100">
             <img src="https://vform-pages.s3.us-east-2.amazonaws.com/landing/images/iconos/iconos_Vinko-30.png"
-              class="card-img-top p-lg-5" alt="...">
+              class="card-img-top p-lg-5" alt="..." />
             <div class="card-body">
-              <p class="card-text text-center">Consulta <strong>avances</strong> de tu proceso <strong>al
-                  instante</strong> </p>
+              <p class="card-text text-center">
+                Consulta <strong>avances</strong> de tu proceso
+                <strong>al instante</strong>
+              </p>
             </div>
           </div>
         </div>
@@ -163,12 +186,16 @@
 
   <div class="container mt-5">
     <div class="row">
-      <div class="col-lg-2 col-sm-4">
-        <button type="button" class="btn btn-secondary rounded-pill px-3 mb-0 mt-0">Casos de Uso</button>
+      <div class="padding-right-150 col-lg-2 col-sm-4 d-inline-flex flex-row-reverse" id="button">
+        <button type="button" class="btn btn-secondary rounded-pill h-30 px-3 mb-0 mt-0">
+          Casos de Uso
+        </button>
       </div>
       <div class="col-lg-8 col-sm-4 mb-5">
         <div class="float-left">
-          <h4>Buscamos impactar en convocatorias y colaborar en procesos de postulación de todos los ámbitos
+          <h4>
+            Buscamos impactar en convocatorias y colaborar en procesos de
+            postulación de todos los ámbitos
           </h4>
         </div>
       </div>
@@ -181,17 +208,18 @@
       <div class="row">
         <!--Card-->
         <div class="col-sm-12 col-lg-6 mb-sm-4 h-10">
-          <div class="card rounded-3 p-lg-4 shadow-lg p-3 bg-white rounded border-0 h-10 mb-0"
-            style="max-width: 540px;">
+          <div class="card rounded-3 p-lg-4 shadow-lg p-3 bg-white rounded border-0 h-10 mb-0" style="max-width: 540px">
             <div class="row no-gutters">
               <div class="col-md-4 align-self-center">
                 <img src="https://vform-pages.s3.us-east-2.amazonaws.com/landing/images/iconos/iconos_Vinko-06.png"
-                  class="card-img-top card border-0" alt="...">
+                  class="card-img-top card border-0" alt="..." />
               </div>
               <div class="col-md-8">
                 <div class="card-body">
                   <h5 class="card-title">Fondos concursables</h5>
-                  <p class="card-text2">Emprendimiento, Innovación, Desarrollo local y más...</p>
+                  <p class="card-text2">
+                    Emprendimiento, Innovación, Desarrollo local y más...
+                  </p>
                 </div>
               </div>
             </div>
@@ -199,18 +227,19 @@
         </div>
         <!--Card-->
         <div class="col-sm-12 col-lg-6 mb-sm-4 h-10">
-          <div class="card rounded-3 p-lg-4 shadow-lg p-3 bg-white rounded border-0 h-10 mb-0"
-            style="max-width: 540px;">
+          <div class="card rounded-3 p-lg-4 shadow-lg p-3 bg-white rounded border-0 h-10 mb-0" style="max-width: 540px">
             <div class="row no-gutters">
               <div class="col-md-4 align-self-center">
                 <img src="https://vform-pages.s3.us-east-2.amazonaws.com/landing/images/iconos/iconos_Vinko-05.png"
-                  class="card-img-top card border-0" alt="...">
+                  class="card-img-top card border-0" alt="..." />
               </div>
               <div class="col-md-8">
                 <div class="card-body">
                   <h5 class="card-title">Admisión y selección</h5>
-                  <p class="card-text2">Escolar, Universitaria, Diplomados, Empleos, Licitaciones y
-                    más...</p>
+                  <p class="card-text2">
+                    Escolar, Universitaria, Diplomados, Empleos, Licitaciones
+                    y más...
+                  </p>
                 </div>
               </div>
             </div>
@@ -223,36 +252,37 @@
       <div class="row">
         <!--Card-->
         <div class="col-sm-12 col-lg-6 mb-sm-4 h-10">
-          <div class="card rounded-3 p-lg-4 shadow-lg p-3 bg-white rounded border-0 h-10 mb-0"
-            style="max-width: 540px;">
+          <div class="card rounded-3 p-lg-4 shadow-lg p-3 bg-white rounded border-0 h-10 mb-0" style="max-width: 540px">
             <div class="row no-gutters">
               <div class="col-md-4 align-self-center">
                 <img src="https://vform-pages.s3.us-east-2.amazonaws.com/landing/images/iconos/iconos_Vinko-07.png"
-                  class="card-img-top card border-0" alt="...">
+                  class="card-img-top card border-0" alt="..." />
               </div>
               <div class="col-md-8">
                 <div class="card-body">
                   <h5 class="card-title">Innovación y emprendimiento</h5>
-                  <p class="card-text2">Concursos, Selección de startups, Aceleradoras,
-                    Incubadoras y
-                    más...</p>
+                  <p class="card-text2">
+                    Concursos, Selección de startups, Aceleradoras,
+                    Incubadoras y más...
+                  </p>
                 </div>
               </div>
             </div>
           </div>
         </div>
         <!--Card-->
-        <div class="col-sm-12 col-lg-6 mb-sm-4 h-10 ">
-          <div class="card rounded-3 p-lg-4 shadow-lg p-3 bg-white rounded border-0 mb-0" style="max-width: 540px;">
+        <div class="col-sm-12 col-lg-6 mb-sm-4 h-10">
+          <div class="card rounded-3 p-lg-4 shadow-lg p-3 bg-white rounded border-0 mb-0" style="max-width: 540px">
             <div class="row no-gutters">
               <div class="col-md-4 align-self-center">
                 <img src="https://vform-pages.s3.us-east-2.amazonaws.com/landing/images/iconos/iconos_Vinko-09.png"
-                  class="card-img-top card border-0" alt="...">
+                  class="card-img-top card border-0" alt="..." />
               </div>
               <div class="col-md-8">
                 <div class="card-body">
                   <h5 class="card-title">Solicitudes e inscripciones</h5>
-                  <p class="card-text2">Certificados, Declaraciones, Registros, Voluntariados y
+                  <p class="card-text2">
+                    Certificados, Declaraciones, Registros, Voluntariados y
                     más...
                   </p>
                 </div>
@@ -266,18 +296,18 @@
       <div class="row">
         <!--Card-->
         <div class="col-sm-12 col-lg-6 mb-sm-4 h-10">
-          <div class="card rounded-3 p-lg-4 shadow-lg p-3 bg-white rounded border-0 h-10 mb-0"
-            style="max-width: 540px;">
+          <div class="card rounded-3 p-lg-4 shadow-lg p-3 bg-white rounded border-0 h-10 mb-0" style="max-width: 540px">
             <div class="row no-gutters">
               <div class="col-md-4 align-self-center">
                 <img src="https://vform-pages.s3.us-east-2.amazonaws.com/landing/images/iconos/iconos_Vinko-10.png"
-                  class="card-img-top card border-0" alt="...">
+                  class="card-img-top card border-0" alt="..." />
               </div>
               <div class="col-md-8">
                 <div class="card-body">
                   <h5 class="card-title">Premios y concursos</h5>
-                  <p class="card-text2">Reconocimientos, Concursos, Premios, Sorteos y
-                    más...</p>
+                  <p class="card-text2">
+                    Reconocimientos, Concursos, Premios, Sorteos y más...
+                  </p>
                 </div>
               </div>
             </div>
@@ -286,18 +316,18 @@
 
         <!--Card-->
         <div class="col-sm-12 col-lg-6 mb-sm-4 h-10">
-          <div class="card rounded-3 p-lg-4 shadow-lg p-3 bg-white rounded border-0 h-10 mb-0"
-            style="max-width: 540px;">
+          <div class="card rounded-3 p-lg-4 shadow-lg p-3 bg-white rounded border-0 h-10 mb-0" style="max-width: 540px">
             <div class="row no-gutters">
               <div class="col-md-4 align-self-center">
                 <img src="https://vform-pages.s3.us-east-2.amazonaws.com/landing/images/iconos/iconos_Vinko-05.png"
-                  class="card-img-top card border-0" alt="...">
+                  class="card-img-top card border-0" alt="..." />
               </div>
               <div class="col-md-8">
                 <div class="card-body">
                   <h5 class="card-title">Becas y beneficios</h5>
-                  <p class="card-text2">Educacionales, Ayuda social, Subsidios, Bonos
-                    y más..</p>
+                  <p class="card-text2">
+                    Educacionales, Ayuda social, Subsidios, Bonos y más..
+                  </p>
                 </div>
               </div>
             </div>
@@ -305,31 +335,151 @@
         </div>
       </div>
       <!--End Row 3-->
-
     </div>
   </div>
   <!--Fin cards-->
+  <!--Experiencia-->
+  <div class="container mt-5">
+    <div class="row">
+      <div class="padding-right-150 col-lg-2 col-sm-4 d-inline-flex flex-row-reverse" id="button">
+        <button type="button" class="btn btn-secondary rounded-pill h-30 px-3 mb-0 mt-0">
+          Experiencia
+        </button>
+      </div>
+      <div class="col-lg-3 col-md-3 mb-4">
+        <div class="float-left">
+          <h1>+200</h1>
+          <h4>licencias</h4>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-3 mb-4">
+        <div class="float-left">
+          <h1>+200</h1>
+          <h4>usuarios</h4>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-3 mb-4">
+        <div class="float-left">
+          <h1>+200</h1>
+          <h4>países</h4>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--Alianzas-->
+  <div class="container mt-5">
+    <div class="row">
+      <div class="padding-right-150 col-lg-2 col-sm-4 d-inline-flex flex-row-reverse" id="button">
+        <button type="button" class="btn btn-secondary rounded-pill h-30 px-3 mb-0 mt-0">
+          Alianzas
+        </button>
+      </div>
+      <div class="col-lg-8 col-sm-4 mb-5">
+        <div class="float-left">
+          <h4>
+            Confían en nosotros
+          </h4>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--Cards-->
+  <div class="container col-lg-10 px-md-5 px-sm-4">
+    <div class="row">
+      <div class="col-sm">
+        <div class="align-self-center">
+          <img src="https://vform-pages.s3.us-east-2.amazonaws.com/landing/images/iconos/iconos_Vinko-06.png"
+            class="card-img-top card border-0" alt="...">
+        </div>
+      </div>
+      <div class="col-sm">
+        <div class="align-self-center">
+          <img src="https://vform-pages.s3.us-east-2.amazonaws.com/landing/images/iconos/iconos_Vinko-06.png"
+            class="card-img-top card border-0" alt="...">
+        </div>
+      </div>
+      <div class="col-sm">
+        <div class="align-self-center">
+          <img src="https://vform-pages.s3.us-east-2.amazonaws.com/landing/images/iconos/iconos_Vinko-06.png"
+            class="card-img-top card border-0" alt="...">
+        </div>
+      </div>
+      <div class="col-sm">
+        <div class="align-self-center">
+          <img src="https://vform-pages.s3.us-east-2.amazonaws.com/landing/images/iconos/iconos_Vinko-06.png"
+            class="card-img-top card border-0" alt="...">
+        </div>
+      </div>
+      <div class="col-sm">
+        <div class="align-self-center">
+          <img src="https://vform-pages.s3.us-east-2.amazonaws.com/landing/images/iconos/iconos_Vinko-06.png"
+            class="card-img-top card border-0" alt="...">
+        </div>
+      </div>
+      <div class="col-sm">
+        <div class="align-self-center">
+          <img src="https://vform-pages.s3.us-east-2.amazonaws.com/landing/images/iconos/iconos_Vinko-06.png"
+            class="card-img-top card border-0" alt="...">
+        </div>
+      </div>
+      <div class="col-sm">
+        <div class="align-self-center">
+          <img src="https://vform-pages.s3.us-east-2.amazonaws.com/landing/images/iconos/iconos_Vinko-06.png"
+            class="card-img-top card border-0" alt="...">
+        </div>
+      </div>
+      <div class="col-sm">
+        <div class="align-self-center">
+          <img src="https://vform-pages.s3.us-east-2.amazonaws.com/landing/images/iconos/iconos_Vinko-06.png"
+            class="card-img-top card border-0" alt="...">
+        </div>
+      </div>
+      <div class="col-sm">
+        <div class="align-self-center">
+          <img src="https://vform-pages.s3.us-east-2.amazonaws.com/landing/images/iconos/iconos_Vinko-06.png"
+            class="card-img-top card border-0" alt="...">
+        </div>
+      </div>
+      <div class="col-sm">
+        <div class="align-self-center">
+          <img src="https://vform-pages.s3.us-east-2.amazonaws.com/landing/images/iconos/iconos_Vinko-06.png"
+            class="card-img-top card border-0" alt="...">
+        </div>
+      </div>
+      <div class="col-sm">
+        <div class="align-self-center">
+          <img src="https://vform-pages.s3.us-east-2.amazonaws.com/landing/images/iconos/iconos_Vinko-06.png"
+            class="card-img-top card border-0" alt="...">
+        </div>
+      </div>
+      <div class="col-sm">
+        <div class="align-self-center">
+          <img src="https://vform-pages.s3.us-east-2.amazonaws.com/landing/images/iconos/iconos_Vinko-06.png"
+            class="card-img-top card border-0" alt="...">
+        </div>
+      </div>
+    </div>
+  </div>
+
 
   <!-- Footer -->
   <footer>
     <div class="container mt-5">
       <div class="row">
-        <div class="col-lg-2 col-sm-12">
-        </div>
+        <div class="col-lg-2 col-sm-12"></div>
         <!--Vinko -->
         <div class="col-lg-3 col-sm-4 mb-5">
           <div class="row mb-4">
             <div class="mt-0 mb-2">
               <img src="https://vform-pages.s3.us-east-2.amazonaws.com/landing/images/vinko.png" class="img-fluid"
-                alt="...">
+                alt="..." />
             </div>
             <div class="row">
               <p class="footer mt-4">
-                Somos una empresa de transformación digital con foco en la gestión de
-                información.
-                Trabajamos como partner tecnológico de empresas, fundaciones,
-                municipalidades y
-                distintas organizaciones sociales.
+                Somos una empresa de transformación digital con foco en la
+                gestión de información. Trabajamos como partner tecnológico de
+                empresas, fundaciones, municipalidades y distintas
+                organizaciones sociales.
               </p>
             </div>
             <div class="row">
@@ -379,32 +529,30 @@
         </div>
         <!--vform-->
         <div class="col-lg-2 col-md-3 mb-4">
-          <h5 class="text-uppercase mb-3 fw-bold">SOFTWARE DE POSTULACIONES</h5>
+          <h5 class="text-uppercase mb-3 fw-bold">
+            SOFTWARE DE POSTULACIONES
+          </h5>
           <ul class="list-unstyled">
             <li>
-              <a href="https://vinkodigital.com/vform/fondos/" target="_blank" class="footer">Fondos
-                concursables</a>
+              <a href="https://vinkodigital.com/vform/fondos/" target="_blank" class="footer">Fondos concursables</a>
             </li>
             <li>
               <a href="https://vinkodigital.com/vform/proyectos/" target="_blank" class="footer">Innovación y
                 emprendimientos</a>
             </li>
             <li>
-              <a href="https://vinkodigital.com/vform/becas/" target="_blank" class="footer">Becas y
-                beneficios</a>
+              <a href="https://vinkodigital.com/vform/becas/" target="_blank" class="footer">Becas y beneficios</a>
             </li>
             <li>
               <a href="https://vinkodigital.com/vform/admisiones/" target="_blank" class="footer">Admisión y
                 selección</a>
             </li>
             <li>
-              <a href="https://vinkodigital.com/vform/solicitudes/" target="_blank" class="footer">Solicitudes
-                e
+              <a href="https://vinkodigital.com/vform/solicitudes/" target="_blank" class="footer">Solicitudes e
                 inscripciones</a>
             </li>
             <li>
-              <a href="https://vinkodigital.com/vform/premios/" target="_blank" class="footer">Premios y
-                concursos</a>
+              <a href="https://vinkodigital.com/vform/premios/" target="_blank" class="footer">Premios y concursos</a>
             </li>
           </ul>
         </div>
@@ -433,20 +581,19 @@
     </div>
     <!-- Copyright -->
     <div class="container-fluid p-4 bg-primary bg-gradient m-lg-0 mb-0">
-      <div class="row text-white" style="font-size: 80%;">
+      <div class="row text-white" style="font-size: 80%">
         <div class="col-sm text-lg-end">
           <a> © 2021 Vinkodigital</a>
         </div>
         <div class="col-sm text-lg-star">
-          <a href="https://www.vform.cl/privacy_policy" target="_blank">Políticas de
-            Privacidad</a>
+          <a href="https://www.vform.cl/privacy_policy" target="_blank">Políticas de Privacidad</a>
         </div>
       </div>
     </div>
   </footer>
 </body>
-      <!-- JS -->
+<!-- JS -->
+<script src="assets/js/swiper.min.js"></script>
+<script src="assets/js/scripts.js"></script>
 
-      <script src="assets/js/swiper.min.js"></script>
-      <script src="assets/js/scripts.js"></script>
 </html>
