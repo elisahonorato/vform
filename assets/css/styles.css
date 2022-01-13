@@ -1376,7 +1376,7 @@ progress {
   .gy-sm-5 {
     --bs-gutter-y: 3rem;
   }
-}
+
 
 @media (min-width: 768px) {
   .col-md {
@@ -12903,4 +12903,4 @@ footer a:focus {
   .masthead .masthead-device-mockup .device-wrapper {
     max-width: 17rem;
   }
-}}
+}
