@@ -3163,6 +3163,10 @@ fieldset:disabled .btn {
   margin-bottom: 0;
   color: var(--bs-indigo2);
 }
+.card-text3:last-child {
+  margin-bottom: 0;
+  color: var(--vform);
+}
 
 .card-link+.card-link {
   margin-left: 1rem;
