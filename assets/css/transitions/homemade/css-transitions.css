@@ -14,7 +14,7 @@
 :root {
   --bs-indigo: #24145C;
   --bs-indigo2: #6633FF;
-  --vform: #FFAC00;
+  --vform: #ffa600;
   --bs-purple: var(--bs-secondary);
   --bs-white: #fff;
   --bs-gray: #6c757d;
@@ -34,12 +34,17 @@
   --bs-success: #198754;
   --bs-warning: #ffac00;
 }
+/*
+
 #card-vform {
   opacity: 100%;
 }
 #card-vform:hover {
   opacity: 10%;
 }
+
+*/
+
 
 .fade-in {
   animation-name: example;
@@ -126,5 +131,11 @@ animation-duration: 1.2s;
   animation-delay: 1.2s;
   visibility: visible;
 }
-
-
+#btn_principal{
+  animation: agrandar_boton 5s infinite;
+transition: all 0.17s linear;
+}
+@keyframes agrandar_boton {
+  from {scale:1.3}
+  to {scale:1.5}
+}
