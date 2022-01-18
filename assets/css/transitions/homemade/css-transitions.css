@@ -12,8 +12,8 @@
  */
 
 :root {
-  --bs-indigo: #24145C;
-  --bs-indigo2: #6633FF;
+  --bs-indigo: #24145c;
+  --bs-indigo2: #6633ff;
   --vform: #ffa600;
   --bs-purple: var(--bs-secondary);
   --bs-white: #fff;
@@ -28,7 +28,7 @@
   --bs-gray-700: #495057;
   --bs-gray-800: #343a40;
   --bs-gray-900: #212529;
-  --bs-primary: #24145C;
+  --bs-primary: #24145c;
   --bs-secondary: #ececec;
   --bs-tertiary: #5f5f5f;
   --bs-success: #198754;
@@ -45,16 +45,14 @@
 
 */
 
-
 .fade-in {
   animation-name: example;
 }
 
 @keyframes example {
   from {
-   opacity: 0%;
-   visibility: hidden;
-
+    opacity: 0%;
+    visibility: hidden;
   }
   to {
     background-color: var(--bs-primary);
@@ -63,79 +61,82 @@
   }
 }
 #button1 {
-  
-animation-duration: 1.2s;
+  animation-duration: 1.5s;
   animation-delay: 0s;
   visibility: visible;
 }
 #button2 {
-animation-duration: 1.2s;
+  animation-duration: 1.5s;
   animation-delay: 0.1s;
   visibility: visible;
 }
 #button3 {
-animation-duration: 1.2s;
+  animation-duration: 1.5s;
   animation-delay: 0.2s;
   visibility: visible;
 }
 #button4 {
-  
-animation-duration: 1.2s;
+  animation-duration: 1.5s;
   animation-delay: 0.3s;
   visibility: visible;
 }
 #button5 {
-  
-animation-duration: 1.2s;
+  animation-duration: 1.5s;
   animation-delay: 0.4s;
   visibility: visible;
 }
 #button6 {
-  
-animation-duration: 1.2s;
+  animation-duration: 1.5s;
   animation-delay: 0.5s;
   visibility: visible;
-}#button7 {
-  
-animation-duration: 1.2s;
+}
+#button7 {
+  animation-duration: 1.5s;
   animation-delay: 0.6s;
   visibility: visible;
-}#button8 {
-  
-animation-duration: 1.2s;
+}
+#button8 {
+  animation-duration: 1.5s;
   animation-delay: 0.7s;
   visibility: visible;
-}#button9 {
-  
-animation-duration: 1.2s;
+}
+#button9 {
+  animation-duration: 1.5s;
   animation-delay: 0.8s;
   visibility: visible;
-}#button10 {
-  
-animation-duration: 1.2s;
+}
+#button10 {
+  animation-duration: 1.5s;
   animation-delay: 0.9s;
   visibility: visible;
-}#button11 {
-  
-animation-duration: 1.2s;
+}
+#button11 {
+  animation-duration: 1.5s;
   animation-delay: 1s;
   visibility: visible;
-}#button12 {
-  
-animation-duration: 1.2s;
+}
+#button12 {
+  animation-duration: 1.5s;
   animation-delay: 1.1s;
   visibility: visible;
-}#button13 {
-  
-animation-duration: 1.2s;
+}
+#button13 {
+  animation-duration: 1.5s;
   animation-delay: 1.2s;
   visibility: visible;
 }
-#btn_principal{
-  animation: agrandar_boton 5s infinite;
-transition: all 0.17s linear;
+
+#agrandar_boton {
+  visibility: visible;
+  animation: crescendo 1s alternate ease-in;
+  animation-duration: 0.7s;
+  animation-delay: 2.6s;
 }
-@keyframes agrandar_boton {
-  from {scale:1.3}
-  to {scale:1.5}
+@keyframes crescendo {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(2);
+  }
 }
