@@ -135,15 +135,24 @@
 
 #agrandar_boton {
   visibility: visible;
-  animation: crescendo 1s alternate ease-in;
-  animation-duration: 0.7s;
-  animation-delay: 2.6s;
+  animation: crescendo ease-in-out 1s;
+  animation-duration: 0.4s;
+  animation-delay: 2.7s;
+  transform: scale(1.2);
 }
 @keyframes crescendo {
   0% {
-    transform: scale(1);
+    transform: scale(1.2);
   }
+  50%  { transform: scale(1.5);}
   100% {
-    transform: scale(2);
+    transform: scale(1.2);
   }
+}
+#agrandar_boton:hover {
+  visibility: visible;
+  animation: crescendo ease-in-out 1s;
+  animation-duration: 0.4s;
+  animation-delay: 2.7s;
+  transform: scale(1.5);
 }
