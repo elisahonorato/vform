@@ -307,6 +307,10 @@ a.footer {
   color: var(--bs-indigo);
   font-size: 0.8rem;
 }
+a.footer:hover{
+  color: var(--bs-morado);
+  font-size: 0.8rem;
+}
 
 pre,
 code,
