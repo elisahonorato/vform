@@ -153,6 +153,83 @@
   visibility: visible;
   animation: crescendo ease-in-out 1s;
   animation-duration: 0.4s;
-  animation-delay: 2.7s;
-  transform: scale(1.5);
+}
+
+#footer_isotype_animation {
+position: relative;
+animation: bounce 2s infinite;
+animation-direction:alternate-reverse;
+}
+@keyframes bounce {
+ 0% {
+  top:  0rem;
+  left: 7rem;
+      -webkit-animation-timing-function: ease-in;
+ }
+   10% {
+    top:  -1.7rem;
+    left: -10rem;
+        -webkit-animation-timing-function: ease-in;
+   }
+
+
+   20% {
+      top:  1rem;
+      left: -20rem;
+      -webkit-animation-timing-function: ease-in;
+
+   }
+   30% {
+    top:  -1.7rem;
+    left: -30rem;
+        -webkit-animation-timing-function: ease-in;
+   }
+
+
+   40% {
+      top:  1rem;
+      left: -40rem;
+      -webkit-animation-timing-function: ease-in;
+
+   }
+   50% {
+    top:  -1.7rem;
+    left: -50rem;
+        -webkit-animation-timing-function: ease-in;
+   }
+
+
+   60% {
+      top:  1rem;
+      left: -60rem;
+      -webkit-animation-timing-function: ease-in;
+
+   }
+   70% {
+    top:  -1.7rem;
+    left: -70rem;
+        -webkit-animation-timing-function: ease-in;
+   }
+
+
+   80% {
+      top:  1rem;
+      left: -80rem;
+      -webkit-animation-timing-function: ease-in;
+
+   }
+   90% {
+    top:  -1.7rem;
+    left: -90rem;
+        -webkit-animation-timing-function: ease-in;
+   }
+
+
+   100% {
+      top:  1rem;
+      left: -100rem;
+      -webkit-animation-timing-function: ease-in;
+
+   }
+
 }
