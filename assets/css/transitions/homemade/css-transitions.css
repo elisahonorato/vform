@@ -16,17 +16,17 @@
   --vform: #ffa600;
   --bs-purple: var(--bs-secondary);
   --bs-white: #fff;
-  --bs-gray_vinko:#dcdbe4;
+  --bs-gray_vinko: #dcdbe4;
   --bs-gray: #6c757d;
   --bs-gray-dark: #343a40;
-  --bs-gray-100: #F1F1F3;
-  --bs-gray-200: #E2E2E8;
-  --bs-gray-300: #CACAD0;
-  --bs-gray-400: #B1B1B9;
-  --bs-gray-500: #9999A2;
-  --bs-gray-600: #81818A;
+  --bs-gray-100: #f1f1f3;
+  --bs-gray-200: #e2e2e8;
+  --bs-gray-300: #cacad0;
+  --bs-gray-400: #b1b1b9;
+  --bs-gray-500: #9999a2;
+  --bs-gray-600: #81818a;
   --bs-gray-700: #696973;
-  --bs-gray-800: #50505C;
+  --bs-gray-800: #50505c;
   --bs-gray-900: #383844;
 
   --bs-primary: #24145c;
@@ -144,7 +144,9 @@
   0% {
     transform: scale(1.2);
   }
-  50%  { transform: scale(1.5);}
+  50% {
+    transform: scale(1.5);
+  }
   100% {
     transform: scale(1.2);
   }
@@ -156,80 +158,25 @@
 }
 
 #footer_isotype_animation {
-position: relative;
-animation: bounce 2s infinite;
-animation-direction:alternate-reverse;
+  animation: bounce 3s infinite;
+  animation-direction: alternate-reverse;
+  display: flex;
+  width: 100px;
+  max-width: 100%;
+  height: auto;
+  bottom: 0cm;
 }
 @keyframes bounce {
- 0% {
-  top:  0rem;
-  left: 7rem;
-      -webkit-animation-timing-function: ease-in;
- }
-   10% {
-    top:  -1.7rem;
-    left: -10rem;
-        -webkit-animation-timing-function: ease-in;
-   }
-
-
-   20% {
-      top:  1rem;
-      left: -20rem;
-      -webkit-animation-timing-function: ease-in;
-
-   }
-   30% {
-    top:  -1.7rem;
-    left: -30rem;
-        -webkit-animation-timing-function: ease-in;
-   }
-
-
-   40% {
-      top:  1rem;
-      left: -40rem;
-      -webkit-animation-timing-function: ease-in;
-
-   }
-   50% {
-    top:  -1.7rem;
-    left: -50rem;
-        -webkit-animation-timing-function: ease-in;
-   }
-
-
-   60% {
-      top:  1rem;
-      left: -60rem;
-      -webkit-animation-timing-function: ease-in;
-
-   }
-   70% {
-    top:  -1.7rem;
-    left: -70rem;
-        -webkit-animation-timing-function: ease-in;
-   }
-
-
-   80% {
-      top:  1rem;
-      left: -80rem;
-      -webkit-animation-timing-function: ease-in;
-
-   }
-   90% {
-    top:  -1.7rem;
-    left: -90rem;
-        -webkit-animation-timing-function: ease-in;
-   }
-
-
-   100% {
-      top:  1rem;
-      left: -100rem;
-      -webkit-animation-timing-function: ease-in;
-
-   }
-
+  0% {
+    transform: translateY(12px);
+  }
+  30% {
+    transform: translateY(-100px);
+  }
+  50% {
+    transform: translateY(12px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
 }
